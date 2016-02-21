@@ -1,7 +1,7 @@
 FROM haskell:7
 MAINTAINER Allyson Julian <allyson@allysonjulian.com>
 
-RUN cabal update && cabal install ghc-mod parsec quickcheck
+RUN cabal update && cabal install ghc-mod parsec quickcheck unordered-containers
 
 ENV SRC_DIR /src/cs421
 
